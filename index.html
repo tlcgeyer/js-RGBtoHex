@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-------CSS----------->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Converter</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>RGB to Hex Converter</h1>
+
+        <div class="input-container">
+            <label for="red">Red:</label>
+            <input type="number" id="red" min="0" max="255" placeholder="0">
+            
+            <label for="green">Green:</label>
+            <input type="number" id="green" min="0" max="255" placeholder="0">
+            
+            <label for="blue">Blue:</label>
+            <input type="number" id="blue" min="0" max="255" placeholder="0">
+            
+            <button onclick="convert()">Convert</button>
+        </div>
+
+        <div class="result-container">
+            <label for="hex">Hex:</label>
+            <input type="text" id="hex" readonly>
+        </div>
+    </div>
+    <!--------JavaScript-------->
+    <script src="./script/code.js"></script>
+</body>
+</html>
